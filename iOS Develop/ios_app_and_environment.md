@@ -656,5 +656,47 @@ app可能通过多个不同的初始点之一进入后台。系统事件可能�
 
 
 
+### UIWindowSceneDelegate
+
+你需要使用的额外的方法去管理界面当中产生的任务
+
+#### Declaration
+
+```swift
+protocol UIWindowSceneDelegate
+```
+
+#### Overview
+
+使用`UIWindowSceneDelegate`对象去管理app用户界面实例的生命周期。视窗界面委托遵循[`UISceneDelegate`](apple-reference-documentation://hsd-omBXXP)协议，当你的界面连接到app、进入前台等的时候，你使用它来接受通知。你也要使用它以响应界面底层环境的改变。例如，如果用户重新调整了一个界面的大小，使用这个委托去做出相对应适合大小的改变。
+
+不要直接创建`UIWindowSceneDelegate`对象。相反的，为你的界面声明委托类的名字。你可以在`Info.plist`文件里说明这个信息，或者在从app委托的[`application(_:configurationForConnecting:options:)`](apple-reference-documentation://hsXCIRc8BC)方法返回的[`UISceneConfiguration`](apple-reference-documentation://hszq56mXeE) 对象里。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
